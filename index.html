@@ -4,17 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+        .form-container {
+            border: 1px solid lightgray;
+            border-radius: 7px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 600px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-wrapper {
+            padding: 20px;
+        }
+        .strip {
+            background-color: rgb(92, 5, 5);
+            height: 20px;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 </head>
 <body>
-    <div style="border: 1px solid lightgray; margin-top: 10px; border-radius: 7px; margin-bottom: 10px;">
-        <div style="background-color: darkred; height: 20px;"></div>
-        <h1 style="text-align: center; font-size: 30px; font-family: Verdana, Geneva, Tahoma, sans-serif; margin-top: 3px;">
-            Job Application
-        </h1>
-        <div style="padding-left: 8px;">
-            <h2 style="color: darkred;">
-                Personal Information
-            </h2>
+    <div class="form-container">
+        <div class="strip"></div>
+        <div class="form-wrapper">
+            <h1 style="text-align: center; font-size: 30px; font-family: Verdana, Geneva, Tahoma, sans-serif; margin-top: 1px;">
+                Job Application
+            </h1>
+            <div>
+                <h2 style="color: rgb(155, 5, 5);">
+                    Personal Information
+                </h2>
             <form>
                 <div style="display: flex; flex-direction: row;">
                     <label for="name" style="font-size: 17px;">Name</label>
@@ -103,7 +131,7 @@
                     <label for="address" style="font-size: 17px;">What are your hobbies?</label>
                     <input type="text" style="width: 500px;">
                 </div>
-                <h2 style="color: darkred;">
+                <h2 style="color: rgb(155, 5, 5);">
                     Precious/Current Employment Details
                 </h2>
                 <div style="display: flex; flex-direction: row; margin-top: 13px;">
@@ -118,7 +146,7 @@
                     <label for="job-timeline" style="font-size: 17px;">How long were you <br> here?</label>
                     <input type="text" style="margin-left: 30px; width: 300px; height: 18px;">
                 </div>
-                <h2 style="color: darkred;">
+                <h2 style="color: rgb(155, 5, 5);">
                     Reference #1
                 </h2>
                 <div style="display: flex; flex-direction: row; margin-top: 13px;">
@@ -129,7 +157,7 @@
                     <label for="ref1-phone" style="font-size: 17px;">Phone</label>
                     <input type="text" style="margin-left: 118px; width: 300px;">
                 </div>
-                <h2 style="color: darkred;">
+                <h2 style="color: rgb(155, 5, 5);">
                     Reference #2
                 </h2>
                 <div style="display: flex; flex-direction: row; margin-top: 13px;">
@@ -140,13 +168,14 @@
                     <label for="ref2-phone" style="font-size: 17px;">Phone</label>
                     <input type="text" style="margin-left: 118px; width: 300px;">
                 </div>
-                <div style="text-align: center; margin-top: 15px; margin-bottom: 15px;">
-                    <button style="background-color: darkred; color: white; border-radius: 3px; font-size: 30px; padding-left: 20px; padding-right: 20px; padding-top: 5px; padding-bottom: 5px;">
+                <div style="text-align: center; margin-top: 15px;">
+                    <button style="background-color: rgb(92, 5, 5); color: white; border-radius: 3px; font-size: 25px; padding-left: 20px; padding-right: 20px; padding-top: 5px; padding-bottom: 5px;">
                         Apply
                     </button>
                 </div>
             </form>
         </div>
     </div>
+</div>
 </body>
 </html>
