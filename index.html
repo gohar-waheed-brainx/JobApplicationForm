@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+</head>
+<body>
+    <div style="border: 1px solid lightgray; margin-top: 10px; border-radius: 7px; margin-bottom: 10px;">
+        <div style="background-color: darkred; height: 20px;"></div>
+        <h1 style="text-align: center; font-size: 30px; font-family: Verdana, Geneva, Tahoma, sans-serif; margin-top: 3px;">
+            Job Application
+        </h1>
+        <div style="padding-left: 8px;">
+            <h2 style="color: darkred;">
+                Personal Information
+            </h2>
+            <form>
+                <div style="display: flex; flex-direction: row;">
+                    <label for="name" style="font-size: 17px;">Name</label>
+                    <div style="display: flex; flex-direction: column; margin-left: 122px;">
+                        <input type="text">
+                        <span style="color: gray; font-size: 10px;">
+                            First Name
+                        </span>
+                    </div>
+                    <div style="display: flex; flex-direction: column; margin-left: 5px;">
+                        <input type="text" style="margin-left: 5px;">
+                        <span style="color: gray; font-size: 10px; margin-left: 5px;">
+                            Last Name
+                        </span>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: row; margin-top: 15px;">
+                    <label for="email" style="font-size: 17px;">Email</label>
+                    <input type="email" style="margin-left: 122px; width: 280px;" placeholder="user@example.com">
+                </div>
+                <div style="display: flex; flex-direction: row; margin-top: 13px;">
+                    <label for="education" style="font-size: 17px;">Education</label>
+                    <input list="education" name="education" style="margin-left: 93px; width: 230px;" placeholder="Please Choose">
+                    <datalist id="education">
+                        <option value="Matriculation">
+                        <option value="O/A Levels">
+                        <option value="Bacholers">
+                        <option value="Masters">
+                        <option value="PHD">
+                    </datalist>
+                </div>
+                <div style="display: flex; flex-direction: row; margin-top: 13px;">
+                    <label for="resume" style="font-size: 17px;">Resume</label>
+                    <input type="file" style="margin-left: 105px; border: 1px groove darkgrey; border-radius: 2px; padding: 3px;">
+                </div>
+                <div style="display: flex; flex-direction: row; margin-top: 13px;">
+                    <label for="address" style="font-size: 17px;">Address</label>
+                    <div style="display: flex; flex-direction: column; margin-left: 100px;">
+                        <input type="text" style="margin-left: 5px; width: 300px;">
+                        <span style="color: gray; font-size: 10px; text-align: center;">
+                            Address 1
+                        </span>
+                        <input type="text" style="margin-left: 5px; width: 300px;">
+                        <span style="color: gray; font-size: 10px; text-align: center;">
+                            Address 2
+                        </span>
+                        <input list="country" name="country" style="margin-left: 5px; width: 290px;" placeholder="Select a Country">
+                        <datalist id="country">
+                            <option value="Pakistan">
+                            <option value="USA">
+                            <option value="Canada">
+                            <option value="Australia">
+                            <option value="New Zeland">
+                        </datalist>
+                        <span style="color: gray; font-size: 10px; text-align: center;">
+                            Country
+                        </span>
+                        <div style="display: flex; flex-direction: row;">
+                            <div style="display: flex; flex-direction: column;">
+                                <input type="text" style="margin-left: 5px; width: 170px;">
+                                <span style="color: gray; font-size: 10px; text-align: center;">
+                                    City
+                                </span> 
+                            </div>
+                            <div style="display: flex; flex-direction: column;">
+                                <input type="text" style="margin-left: 5px; width: 35px;">
+                                <span style="color: gray; font-size: 10px; text-align: center;">
+                                    State
+                                </span> 
+                            </div>
+                            <div style="display: flex; flex-direction: column;">
+                                <input type="text" style="margin-left: 5px; width: 50px;">
+                                <span style="color: gray; font-size: 10px; text-align: center;">
+                                    Zip Code
+                                </span> 
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                <div style="display: flex; flex-direction: row; margin-top: 13px;">
+                    <label for="address" style="font-size: 17px;">Phone Number</label>
+                    <input type="tel" id="country_code" pattern="\+92" style="margin-left: 58px; width: 25px;">
+                    <input type="tel" id="phone_number" pattern="\d{10}" style="margin-left: 5px; width: 270px;">
+                </div>
+                <div style="display: flex; flex-direction: column; margin-top: 17px;">
+                    <label for="address" style="font-size: 17px;">What are your hobbies?</label>
+                    <input type="text" style="width: 500px;">
+                </div>
+                <h2 style="color: darkred;">
+                    Precious/Current Employment Details
+                </h2>
+                <div style="display: flex; flex-direction: row; margin-top: 13px;">
+                    <label for="company-name" style="font-size: 17px;">Company Name</label>
+                    <input type="text" style="margin-left: 50px; width: 300px;">
+                </div>
+                <div style="display: flex; flex-direction: row; margin-top: 13px;">
+                    <label for="job-title" style="font-size: 17px;">Job Title</label>
+                    <input type="text" style="margin-left: 103px; width: 300px;">
+                </div>
+                <div style="display: flex; flex-direction: row; margin-top: 13px;">
+                    <label for="job-timeline" style="font-size: 17px;">How long were you <br> here?</label>
+                    <input type="text" style="margin-left: 30px; width: 300px; height: 18px;">
+                </div>
+                <h2 style="color: darkred;">
+                    Reference #1
+                </h2>
+                <div style="display: flex; flex-direction: row; margin-top: 13px;">
+                    <label for="ref1-name" style="font-size: 17px;">Name</label>
+                    <input type="text" style="margin-left: 120px; width: 300px;">
+                </div>
+                <div style="display: flex; flex-direction: row; margin-top: 13px;">
+                    <label for="ref1-phone" style="font-size: 17px;">Phone</label>
+                    <input type="text" style="margin-left: 118px; width: 300px;">
+                </div>
+                <h2 style="color: darkred;">
+                    Reference #2
+                </h2>
+                <div style="display: flex; flex-direction: row; margin-top: 13px;">
+                    <label for="ref2-name" style="font-size: 17px;">Name</label>
+                    <input type="text" style="margin-left: 120px; width: 300px;">
+                </div>
+                <div style="display: flex; flex-direction: row; margin-top: 13px;">
+                    <label for="ref2-phone" style="font-size: 17px;">Phone</label>
+                    <input type="text" style="margin-left: 118px; width: 300px;">
+                </div>
+                <div style="text-align: center; margin-top: 15px; margin-bottom: 15px;">
+                    <button style="background-color: darkred; color: white; border-radius: 3px; font-size: 30px; padding-left: 20px; padding-right: 20px; padding-top: 5px; padding-bottom: 5px;">
+                        Apply
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
