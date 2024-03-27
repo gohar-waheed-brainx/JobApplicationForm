@@ -9,14 +9,13 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            height: 80%;
             margin: 0;
             background-color: #f2f2f2;
         }
         .form-container {
             border: 1px solid lightgray;
             border-radius: 7px;
-            margin-top: 10px;
-            margin-bottom: 10px;
             width: 535px;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -37,16 +36,16 @@
     <div class="form-container">
         <div class="strip"></div>
         <div class="form-wrapper">
-            <h1 style="text-align: center; font-size: 30px; font-family: Verdana, Geneva, Tahoma, sans-serif; margin-top: 1px;">
+            <h1 style="text-align: center; font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif; margin-top: 1px;">
                 Job Application
             </h1>
             <div>
-                <h2 style="color: rgb(155, 5, 5);">
+                <h2 style="color: rgb(155, 5, 5); font-size: 15px;">
                     Personal Information
                 </h2>
             <form>
                 <div style="display: flex; flex-direction: row;">
-                    <label for="name" style="font-size: 17px;">Name</label>
+                    <label for="name" style="font-size: 14px;">Name</label>
                     <div style="display: flex; flex-direction: column; margin-left: 122px;">
                         <input type="text">
                         <span style="color: gray; font-size: 10px;">
@@ -60,13 +59,13 @@
                         </span>
                     </div>
                 </div>
-                <div style="display: flex; flex-direction: row; margin-top: 15px;">
-                    <label for="email" style="font-size: 17px;">Email</label>
+                <div style="display: flex; flex-direction: row; margin-top: 2px;">
+                    <label for="email" style="font-size: 14px;">Email</label>
                     <input type="email" style="margin-left: 125px; width: 280px;" placeholder="user@example.com">
                 </div>
-                <div style="display: flex; flex-direction: row; margin-top: 13px;">
-                    <label for="education" style="font-size: 17px;">Education</label>
-                    <input list="education" name="education" style="margin-left: 93px; width: 230px;" placeholder="Please Choose">
+                <div style="display: flex; flex-direction: row; margin-top: 5px;">
+                    <label for="education" style="font-size: 14px;">Education</label>
+                    <input list="education" name="education" style="margin-left: 98px; width: 230px;" placeholder="Please Choose">
                     <datalist id="education">
                         <option value="Matriculation">
                         <option value="O/A Levels">
@@ -75,13 +74,13 @@
                         <option value="PHD">
                     </datalist>
                 </div>
-                <div style="display: flex; flex-direction: row; margin-top: 13px;">
-                    <label for="resume" style="font-size: 17px;">Resume</label>
-                    <input type="file" style="margin-left: 105px; border: 1px groove darkgrey; border-radius: 2px; padding: 3px;">
+                <div style="display: flex; flex-direction: row; margin-top: 5px;">
+                    <label for="resume" style="font-size: 14px;">Resume</label>
+                    <input type="file" style="margin-left: 109px; border: 1px groove darkgrey; border-radius: 2px; padding: 3px;">
                 </div>
-                <div style="display: flex; flex-direction: row; margin-top: 13px;">
-                    <label for="address" style="font-size: 17px;">Address</label>
-                    <div style="display: flex; flex-direction: column; margin-left: 100px;">
+                <div style="display: flex; flex-direction: row; margin-top: 5px;">
+                    <label for="address" style="font-size: 14px;">Address</label>
+                    <div style="display: flex; flex-direction: column; margin-left: 105px;">
                         <input type="text" style="margin-left: 5px; width: 300px;">
                         <span style="color: gray; font-size: 10px; text-align: center;">
                             Address 1
@@ -123,54 +122,54 @@
                         </div>
                     </div>                    
                 </div>
-                <div style="display: flex; flex-direction: row; margin-top: 13px;">
-                    <label for="address" style="font-size: 17px;">Phone Number</label>
-                    <input type="tel" id="country_code" pattern="\+92" style="margin-left: 58px; width: 25px;">
+                <div style="display: flex; flex-direction: row;">
+                    <label for="address" style="font-size: 14px;">Phone Number</label>
+                    <input type="tel" id="country_code" pattern="\+92" style="margin-left: 68px; width: 25px;">
                     <input type="tel" id="phone_number" pattern="\d{10}" style="margin-left: 5px; width: 270px;">
                 </div>
-                <div style="display: flex; flex-direction: column; margin-top: 17px;">
-                    <label for="address" style="font-size: 17px;">What are your hobbies?</label>
+                <div style="display: flex; flex-direction: column;">
+                    <label for="address" style="font-size: 14px;">What are your hobbies?</label>
                     <input type="text" style="width: 500px;">
                 </div>
-                <h2 style="color: rgb(155, 5, 5);">
+                <h2 style="color: rgb(155, 5, 5); font-size: 15px; margin-top: 5px;">
                     Precious/Current Employment Details
                 </h2>
-                <div style="display: flex; flex-direction: row; margin-top: 13px;">
-                    <label for="company-name" style="font-size: 17px;">Company Name</label>
-                    <input type="text" style="margin-left: 50px; width: 300px;">
+                <div style="display: flex; flex-direction: row;">
+                    <label for="company-name" style="font-size: 14px;">Company Name</label>
+                    <input type="text" style="margin-left: 55px; width: 300px;">
                 </div>
-                <div style="display: flex; flex-direction: row; margin-top: 13px;">
-                    <label for="job-title" style="font-size: 17px;">Job Title</label>
-                    <input type="text" style="margin-left: 110px; width: 300px;">
+                <div style="display: flex; flex-direction: row; margin-top: 5px;">
+                    <label for="job-title" style="font-size: 14px;">Job Title</label>
+                    <input type="text" style="margin-left: 104px; width: 300px;">
                 </div>
-                <div style="display: flex; flex-direction: row; margin-top: 13px;">
-                    <label for="job-timeline" style="font-size: 17px;">How long were you <br> here?</label>
-                    <input type="text" style="margin-left: 32px; width: 300px; height: 18px;">
+                <div style="display: flex; flex-direction: row; margin-top: 5px;">
+                    <label for="job-timeline" style="font-size: 14px;">How long were you <br> here?</label>
+                    <input type="text" style="margin-left: 42px; width: 300px; height: 18px;">
                 </div>
-                <h2 style="color: rgb(155, 5, 5);">
+                <h2 style="color: rgb(155, 5, 5); font-size: 15px; margin-top: 5px;">
                     Reference #1
                 </h2>
-                <div style="display: flex; flex-direction: row; margin-top: 13px;">
-                    <label for="ref1-name" style="font-size: 17px;">Name</label>
+                <div style="display: flex; flex-direction: row;">
+                    <label for="ref1-name" style="font-size: 14px;">Name</label>
                     <input type="text" style="margin-left: 121px; width: 300px;">
                 </div>
-                <div style="display: flex; flex-direction: row; margin-top: 13px;">
-                    <label for="ref1-phone" style="font-size: 17px;">Phone</label>
+                <div style="display: flex; flex-direction: row; margin-top: 5px;">
+                    <label for="ref1-phone" style="font-size: 14px;">Phone</label>
                     <input type="text" style="margin-left: 118px; width: 300px;">
                 </div>
-                <h2 style="color: rgb(155, 5, 5);">
+                <h2 style="color: rgb(155, 5, 5); font-size: 15px; margin-top: 5px;">
                     Reference #2
                 </h2>
                 <div style="display: flex; flex-direction: row; margin-top: 13px;">
-                    <label for="ref2-name" style="font-size: 17px;">Name</label>
+                    <label for="ref2-name" style="font-size: 14px;">Name</label>
                     <input type="text" style="margin-left: 121px; width: 300px;">
                 </div>
-                <div style="display: flex; flex-direction: row; margin-top: 13px;">
-                    <label for="ref2-phone" style="font-size: 17px;">Phone</label>
+                <div style="display: flex; flex-direction: row; margin-top: 5px;">
+                    <label for="ref2-phone" style="font-size: 14px;">Phone</label>
                     <input type="text" style="margin-left: 118px; width: 300px;">
                 </div>
-                <div style="text-align: center; margin-top: 15px;">
-                    <button style="background-color: rgb(92, 5, 5); color: #f2f2f2; border-radius: 3px; font-size: 20px; padding-left: 20px; padding-right: 20px; padding-top: 5px; padding-bottom: 5px;">
+                <div style="text-align: center; margin-top: 5px;">
+                    <button style="background-color: rgb(92, 5, 5); color: #f2f2f2; border-radius: 3px; font-size: 15px; padding-left: 20px; padding-right: 20px; padding-top: 5px; padding-bottom: 5px;">
                         Apply
                     </button>
                 </div>
